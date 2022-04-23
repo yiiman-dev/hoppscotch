@@ -1,5 +1,5 @@
 overwrite: true
-schema: https://api.hoppscotch.io/graphql
+schema: https://back.apis.yiiman.ir/graphql
 generates:
   helpers/backend/graphql.ts:
     documents: "**/*.graphql"

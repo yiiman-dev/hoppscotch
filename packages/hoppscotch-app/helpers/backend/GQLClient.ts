@@ -46,8 +46,8 @@ import {
 
 const BACKEND_GQL_URL =
   process.env.context === "production"
-    ? "https://api.hoppscotch.io/graphql"
-    : "https://api.hoppscotch.io/graphql"
+    ? "https://back.apis.yiiman.ir/graphql"
+    : "https://back.apis.yiiman.ir/graphql"
 
 // const storage = makeDefaultStorage({
 //   idbName: "hoppcache-v1",
@@ -56,8 +56,8 @@ const BACKEND_GQL_URL =
 
 const subscriptionClient = new SubscriptionClient(
   process.env.context === "production"
-    ? "wss://api.hoppscotch.io/graphql"
-    : "wss://api.hoppscotch.io/graphql",
+    ? "wss://back.apis.yiiman.ir/graphql"
+    : "wss://back.apis.yiiman.ir/graphql",
   {
     reconnect: true,
     connectionParams: () => {
