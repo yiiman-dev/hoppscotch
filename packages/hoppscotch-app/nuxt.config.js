@@ -5,12 +5,12 @@ require("dotenv").config()
 
 // Common options
 export const options = {
-  name: "Hoppscotch",
-  shortDescription: "Open source API development ecosystem",
+  name: "YiiMan API",
+  shortDescription: "Open source API development ecosystem based on hoppscotch",
   description:
     "Helps you create requests faster, saving precious time on development.",
   keywords:
-    "hoppscotch, hopp scotch, hoppscotch online, hoppscotch app, postwoman, postwoman chrome, postwoman online, postwoman for mac, postwoman app, postwoman for windows, postwoman google chrome, postwoman chrome app, get postwoman, postwoman web, postwoman android, postwoman app for chrome, postwoman mobile app, postwoman web app, api, request, testing, tool, rest, websocket, sse, graphql, socketio",
+    "yiiman, programming",
   loading: {
     color: "var(--divider-dark-color)",
     background: "var(--primary-color)",
@@ -20,7 +20,7 @@ export const options = {
     background: "#202124",
   },
   social: {
-    twitter: "@hoppscotch_io",
+    twitter: "@yiiman1",
   },
 }
 
@@ -35,7 +35,10 @@ export default {
   server: {
     host: "0.0.0.0",
   },
-
+  axios: {
+    proxyHeaders: false,
+    credentials: false,
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     meta: [
