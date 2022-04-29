@@ -36,8 +36,7 @@ export default {
     host: "0.0.0.0",
   },
   axios: {
-    proxyHeaders: false,
-    credentials: false,
+    headers: {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": true}
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
